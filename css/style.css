@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+  font-family: "Roboto Condensed", sans-serif;
+} */
+
+/*   
+    font-family: "Lato", sans-serif;
+ */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* --color: rgb(116, 118, 121); */
+    --header-font: "Roboto Condensed", sans-serif;
+    --primary-font: "Lato", sans-serif;
+    --primary-color: rgb(223, 222, 225);;
+    --secondary-color: #262121;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--color);
+}
+
+h1, h2, h3{
+    font-family: var(--header-font);
+
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.btn{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    padding: 10px 20px;
+    display: inline-block;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 22px;
+    transition-duration: 0.4s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_1_2{
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.column_1_3{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.justify_end{
+    justify-content: flex-end;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/* hero section */
+.hero_section {
+    background-image: url(../images/img_cover.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-color: #00000075;
+    background-position: bottom center;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.hero_section .container{
+    max-width: 800px;
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 75px;
+    font-weight: 600;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+.hero_section p{
+    color: var(--primary-color);
+    font-size: 25px;
+    margin: 20px 0 40px;
+}
+
+
+/* gallery section css */
+
+.gallerySection{
+    padding: 100px 0;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.imagebox{
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.imagebox img{
+    transition-duration: 0.4s;
+    aspect-ratio: 5/4;
+    object-fit: cover;
+}
+.imagebox:hover img{
+transform: scale(1.2);}
+.imageText{
+    background-color: #dae1f6;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.imageText h3{
+    font-size: 24px;
+}
+.imageText p{
+    margin-top: 15px;
+    font-size: 18px;
+}
